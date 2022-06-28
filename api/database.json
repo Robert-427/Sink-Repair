@@ -1,27 +1,58 @@
 {
-  "plumbers": [],
-  "completions": [],
-  "requests": [
+  "plumbers": [
     {
       "id": 1,
-      "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
-      "address": "34445 Bianka Ports",
-      "budget": 400,
-      "neededBy": "2021-08-27"
+      "name": "Maude"
     },
     {
-      "description": "Leaking sink gasket",
-      "address": "123 Main St.",
-      "budget": "200",
-      "neededBy": "2022-06-28",
+      "id": 2,
+      "name": "Merle"
+    }
+  ],
+  "completions": [
+    {
+      "requestId": 3,
+      "plumberId": 1,
+      "description": "Bathroom remodel",
+      "date_created": 1656446901752,
       "id": 2
     },
+    {
+      "requestId": 5,
+      "plumberId": 1,
+      "description": "Leaking sink gasket",
+      "date_created": 1656446906479,
+      "id": 4
+    }
+  ],
+  "requests": [
     {
       "description": "Bathroom remodel",
       "address": "6432 2nd Ave",
       "budget": "2400",
       "neededBy": "2022-08-06",
       "id": 3
+    },
+    {
+      "description": "Leaking sink gasket",
+      "address": "325 Maple St.",
+      "budget": "400",
+      "neededBy": "2022-07-08",
+      "id": 5
+    },
+    {
+      "description": "Update master bath",
+      "address": "356 Pine St.",
+      "budget": "234",
+      "neededBy": "2022-07-01",
+      "id": 6
+    },
+    {
+      "description": "Kitchen sink install",
+      "address": "2465 Maple St.",
+      "budget": "264",
+      "neededBy": "2022-07-07",
+      "id": 7
     }
   ]
 }
