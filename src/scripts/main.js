@@ -1,4 +1,4 @@
-import { fetchRequests, deleteRequest, fetchPlumbers, fetchCompletions } from "./dataAccess.js"
+import { fetchRequests, deleteRequest, fetchPlumbers, fetchCompletions, deleteCompletion } from "./dataAccess.js"
 import { SinkRepair } from "./SinkRepair.js"
 
 
@@ -7,7 +7,7 @@ const mainContainer = document.querySelector("#container")
 mainContainer.addEventListener("click", click => {
     if (click.target.id.startsWith("completion--")) {
         const [, completionId] = click.target.id.split("--")
-        deleteRequest(parseInt(completionId))
+        deleteCompletion(parseInt(completionId))
     }
 })
 

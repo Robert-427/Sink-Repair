@@ -89,3 +89,12 @@ export const deleteRequest = (id) => {
             }
         )
 }
+
+export const deleteCompletion = (id) => {
+    return fetch(`${API}/completions/${id}`, { method: "DELETE" })
+        .then(
+            () => {
+                mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+        )
+}
